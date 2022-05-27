@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fa;
+  font-family: "Montserrat";
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  position: sticky;
+  top: 0;
+}
+
+.wrapper {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.aside-bar {
+  background: #1e2939;
+  width: 370px;
+  padding-left: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.img {
+  width: 370px;
+  height: 354px;
+  transform-origin: center;
+  animation: photo 7s ease-in-out    forwards;
+}
+
+@keyframes photo {
+  0% {
+transform: scale(0); 
+border-radius: 100%;   }
+  20% {
+transform: scale(0.8);  
+border-radius: 100%;   }
+    
+  85%, 90% {
+transform: scale(0.8);
+}
+ 100% {
+transform: scale(1, 1);
+}
+}
+
+.about-me-container {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.contacts-container {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 0.42px;
+}
+
+.contacts-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+}
+.contacts-title:hover, .tech-skills-title:hover, .soft-skills-title:hover {
+  color: #ff6b08;
+  transition: all 0.4s;
+}
+
+.contacts-link {
+  color: #8e949c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contacts-link-type {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-right: 10px;
+}
+
+.tech-skills-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+
+}
+
+.tech-skills-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.tech-skills-item {
+  color: #ff6b08;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 18px;
+}
+
+.tech-skills-text {
+  color: #ffffff;
+}
+
+.soft-skills-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.soft-skills-container {
+  margin: 60px 40px 0;
+}
+
+.soft-skills-item {
+  color: #ff6b08;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 18px;
+}
+.soft-skills-text {
+  color: #ffffff;
+}
+
+.profession {
+  color: #595959;
+  font-size: 14px;
+  margin-bottom: 23px;
+  animation: profession 10s linear forwards;
+}
+
+@keyframes profession {
+  
+  0%, 5% {
+    opacity: 0;
+    transform: translateX(800px);
+}
+10% {
+    opacity: 1;
+    transform: translateX(-15px);
+}
+
+11%, 50% {
+    transform: translateX(0);
+}
+
+70% {
+  color: #595959;
+}
+80% {
+  color: #ff6b08;
+}
+
+95%, 100% {
+  color: #595959;
+}
+}
+
+.name {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+}
+
+.description {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 65px;
+}
+
+.about-me-title {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.projects-link {
+  color: #3c3a3a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.projects-item {
+  color: #000000;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.tech-name {
+  color: #3c3a3a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dots {
+  color: #3c3a3a;
+  font-weight: 100;
+}
+
+.projects-container {
+  margin-bottom: 55px;
+}
+
+.profession-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.profession-company {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.work-period {
+  color: #3c3a3a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.profession-stick {
+  background-color: #000000;
+  width: 1px;
+  height: 14px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.profession-duties {
+  color: #3c3a3a;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.education-subject {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-device-width: 375px) and (orientation: portrait) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .img {
+    width: 360px;
+  }
+  
+  .aside-bar {
+    margin-bottom: 20px;
+    width: 360px;
+  }
+  .about-me-container {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .profession {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .name {
+    font-size: 42px;
+  }
+  .description {
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-device-width: 812px) and (orientation: landscape) {
+  .aside-bar {
+    margin-bottom: 20px;
+  }
+
+  .about-me-container {
+    padding: 40px;
+    text-align: left;
+  }
+
+  .profession {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .name {
+    font-size: 42px;
+  }
+
+  .description {
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (orientation: portrait) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .img {
+    width: 365px;
+    display: block;
+    margin: 0 auto;
+  }
+  .aside-bar {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .personal {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .about-me-container {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .profession {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .name {
+    font-size: 42px;
+  }
+  .description {
+    text-align: justify;
+  }
+}
