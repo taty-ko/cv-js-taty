@@ -25,6 +25,7 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .aside-bar {
@@ -80,6 +81,34 @@ transform: scale(1, 1);
   margin-bottom: 20px;
   transition: all 0.4s;
 }
+.move-1 {
+  animation: move 10s  ease-in-out  forwards;
+}
+ .move-2 {
+  animation: move 10s  ease-in-out 0.3s backwards;
+}
+.move-3 {
+  animation: move 10s  ease-in-out 0.6s backwards;
+}
+.move-4 {
+  animation: move 10s  ease-in-out 0.9s backwards;
+}
+.move-5 {
+  animation: move 10s  ease-in-out 1.2s backwards;
+}
+.move-6 {
+  animation: move 10s  ease-in-out 1.5s backwards;
+} 
+
+@keyframes move {
+  0%, 30% {
+    transform: translateX(-500px);
+  }
+  35%, 100% {
+    transform: translateX(0);
+  }
+}
+
 .contacts-title:hover, .tech-skills-title:hover, .soft-skills-title:hover {
   color: #ff6b08;
   transition: all 0.4s;
@@ -161,16 +190,16 @@ transform: scale(1, 1);
 
 @keyframes profession {
   
-  0%, 5% {
+  0%, 15% {
     opacity: 0;
     transform: translateX(800px);
 }
-10% {
+20% {
     opacity: 1;
     transform: translateX(-15px);
 }
 
-11%, 50% {
+21%, 50% {
     transform: translateX(0);
 }
 
@@ -371,7 +400,19 @@ transform: scale(1, 1);
     flex-direction: row;
     flex-direction: row;
     justify-content: space-around;
+   
   }
+
+  @keyframes personal {
+    0%, 10% {
+      opacity: 0;
+    }
+    11%, 100% {
+      opacity: 1;
+    }
+    
+  }
+
 
   .about-me-container {
     padding: 0 10px;
